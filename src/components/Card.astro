@@ -1,0 +1,30 @@
+--- 
+import "../styles/style.css"
+const {header, description} = Astro.props
+---
+
+<article>
+    <img src="https://picsum.photos/id/65/150/150" alt="playliste">
+    <h2>{header}</h2>
+    <p>{description}</p>
+</article>
+
+<style>
+    article {
+        background-color: #181818;
+        color: #fff;
+        max-width: 200px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    article img {
+        margin: 0 auto;
+    }
+p { color: #a7a7a7;}
+h2 {
+    font-size: 1rem;
+}
+
+</style>

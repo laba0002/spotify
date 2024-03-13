@@ -1,16 +1,28 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro"
+import CardLayout from "../layouts/CardLayout.astro"
+import "../styles/style.css"
+import Card from "../components/Card.astro"
+import PlaylisteBox from "../components/PlaylisteBox.astro"
+import SideBar from "../components/SideBar.astro"
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+<SideBar />
+
+<PlaylisteBox>
+<CardLayout>
+
+	<Card header="Dinner with friends" description="The perfect soundtrack to those long nights..."/>
+	<Card header="Dinner jazz" description="The perfect soundtrack to those long nights..."/>
+	<Card header="Dinner lounge" description="The perfect soundtrack to those long nights..."/>
+	<Card header="Feel good dinner" description="The perfect soundtrack to those long nights..."/>
+	<Card header="Bossa nova dinner" description="The perfect soundtrack to those long nights..."/>
+
+</CardLayout>
+</PlaylisteBox>
+</MainLayout>
+
+
+

@@ -1,0 +1,21 @@
+---
+import Menu from "../components/Menu.astro"
+import Bibliotek from "../components/Bibliotek.astro"
+const {title} = Astro.props
+---
+
+<div
+class="sidebar"> 
+<Menu/>
+<Bibliotek />
+
+</div>
+
+<style>
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+</style>

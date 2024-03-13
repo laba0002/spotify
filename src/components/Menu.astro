@@ -1,0 +1,28 @@
+--- 
+const {title} = Astro.props
+---
+
+<nav>
+    <a href="#">{title}</a>
+    <a href="#">Hjem</a>
+    <a class="inactive" href="#">Søg</a>
+</nav>
+
+<style>
+   nav{
+    background-color: #181818;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+   }
+   nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+   }
+
+   nav .inactive {
+   color: #B3B3B3;
+   }
+</style>

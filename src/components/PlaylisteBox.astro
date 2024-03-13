@@ -1,0 +1,20 @@
+---
+import CardLayout from "../layouts/CardLayout.astro"
+---
+
+
+<div class="PlaylisteBox">
+ <div class="top">
+<h2>Spotify-playlister</h2>
+<p>Vis alle</p>
+</div>
+
+<slot />
+</div>
+
+<style>
+    .top {
+        display: flex;
+       justify-content: space-between ;
+    }
+</style>
