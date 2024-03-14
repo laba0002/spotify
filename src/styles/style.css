@@ -6,3 +6,61 @@ body {
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/** Variabler **/
+
+:root {
+  --background-color: #1c1e28;
+  --text-color: #f4f4f4;
+  --action-color: #b5ff53;
+  --secondary-color: #ffff;
+  /* --tertiary-color: #538a42; */
+}
+
+/** Farver **/
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--action-color);
+}
+
+h3,
+h4,
+p {
+  color: var(--secondary-color);
+}
+
+/** h1 font **/
+
+/** h2 h3 h4 font **/
+
+/* .pt-sans narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/** p font **/
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 700
+
+.space-grotesk-<uniquifier> {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
